@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Shop FreshMart groceries online.">
+    <title>Shop | KaimosiMart Supermarket</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+<body>
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span> Kaimosi,Cheptulu & surrounding areas</span>
+    <span>Free delivery on orders over KSh 10,000</span>
+    <span>☎ +254 741 167 202</span>
+  </div>
+</div>
+<header class="header">
+  <div class="container nav">
+    <a class="logo" href="index.html">
+      <span>Kaimosi</span>
+      Mart
+      <small>SUPERMARKET</small>
+    </a>
+    <button class="menu-toggle">
+      ☰
+    </button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a class="active" href="shop.html">Shop</a>
+      <a href="offers.html">Offers</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="search-link" href="#products">⌕</a>
+      <a class="cart-link" href="#cart">
+        🛒 
+        <span id="cart-count">0</span>
+      </a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">KAIMOSIMART ONLINE SHOP</span>
+      <h1>Shop groceries & essentials</h1>
+      <p>Browse our range, compare prices and build your basket.</p>
+    </div>
+  </section>
+<section class="section" id="products">
+  <div class="container">
+    <div class="shop-layout">
+      <aside class="filters">
+        <b>Departments</b>
+        <button data-cat="all" class="filter active">
+          All products
+        </button>
+        <button data-cat="Fresh Produce" class="filter">
+          Fresh Produce
+        </button>
+        <button data-cat="Dairy" class="filter">
+          Dairy & Eggs
+        </button>
+        <button data-cat="Bakery" class="filter">
+          Bakery
+        </button>
+        <button data-cat="Meat" class="filter">
+          Meat & Poultry
+        </button>
+        <button data-cat="Beverages" class="filter">
+          Beverages
+        </button>
+        <button data-cat="Household" class="filter">
+          Household
+        </button>
+      </aside>
+      <div class="catalog">
+        <div class="shop-toolbar">
+          <div>
+            <b id="result-count">0</b>
+            products
+          </div>
+            <div class="toolbar-controls">
+              <input id="search" type="search" placeholder="🔎 Search products...">
+              <select id="sort">
+                <option value="featured">Sort: Featured</option>
+                <option value="low">Price: Low to high</option>
+                <option value="high">Price: High to low</option>
+                <option value="name">Name: A–Z</option>
+              </select>
+            </div>
+          </div>
+          <div id="shop-products" class="product-grid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="section soft" id="cart">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">YOUR BASKET</span>
+        <h2>Shopping cart</h2>
+      </div>
+      <a class="text-link" href="#products">Continue shopping ↑</a>
+    </div>
+    <div id="cart-items" class="cart-box">
+    </div>
+  </div>
+</section>
+<section class="checkout-section" id="checkout">
+  <div class="container">
+    <div class="checkout-card">
+      <div>
+        <span class="eyebrow">CHECKOUT</span>
+        <h2>Ready to place your order?</h2>
+        <p>
+          This website includes a demo checkout flow. Connect your preferred payment provider and delivery system when you're ready for live orders.
+        </p>
+      </div>
+      <button class="btn primary" onclick="checkout()">
+        Proceed to checkout →
+      </button>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="logo footer-logo" href="index.html">
+        <span>Kaimosi</span>
+        Mart
+        <small>SUPERMARKET</small>
+      </a>
+      <p>Fresh groceries and everyday value.</p>
+    </div>
+    <div>
+      <h4>Shop</h4>
+      <a href="shop.html">All Products</a>
+      <a href="offers.html">Offers</a>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>
+      <h4>Customer Care</h4>
+      <p>☎ +254 741 167 202</p>
+      <p>✉ glifordmusasia54@gmail.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      © 2026 KaimosiMart Supermarket.Gliford Musasia
+    </div>
+  </div>
+</footer>
+<script src="js/products.js">
+
+</script>
+<script src="js/main.js">
+
+</script>
+</body>
+</html>
